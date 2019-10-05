@@ -1,0 +1,1 @@
+web: gunicorn pallbox.wsgi --log-file -

@@ -80,10 +80,16 @@ WSGI_APPLICATION = 'pallbot.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 
-DATABASES = {
+""" DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
     )
+} """
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
 }
 
 
